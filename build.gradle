@@ -1,0 +1,19 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.5.0'
+    }
+}
+
+task assemble {}
+
+ext {
+    compileSdkVersion = 23
+    buildToolsVersion = '23.0.1'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.2.1'
+}
